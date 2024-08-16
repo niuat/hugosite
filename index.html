@@ -322,8 +322,8 @@
 
 
 <link
-  href="/hugosite/css/style.min.d5022a297165cb439c37b1c7b0ca1a43606ee14f4939f0bc76f7802627798970.css"
-  integrity="sha256-1QIqKXFly0OcN7HHsMoaQ2Bu4U9JOfC8dveAJid5iXA="
+  href="/hugosite/css/style.min.4dfab3f463fc1dc3a3de13d04e395ae5f1cef44c38bb69e09584c56c6fbfb377.css"
+  integrity="sha256-Tfqz9GP8HcOj3hPQTjla5fHO9Ew4u2nglYTFbG+/s3c="
   rel="stylesheet" />
 
 
@@ -847,6 +847,16 @@
             <h1 class="mb-4 text-h3 lg:text-h1">
               The Ultimate Starter Template You Need To Start Your Hugo Project
             </h1>
+
+ 
+ <div class="typing-container-wrapper">
+  <div class="typing-container" id="typing-container">
+      <span id="text"></span><span class="cursor"></span>
+  </div>
+</div>
+
+
+
             <p class="mb-8">
               Hugoplate is a free starter template built with Hugo and TailwindCSS, providing everything you need to jumpstart your Hugo project and save valuable time.
             </p>
@@ -944,31 +954,31 @@
         <picture>
           <source
             
-              srcset="/hugosite/images/banner_hu0a5f8563a8e7f50dfbace1ba44f112bf_80952_545x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/hugosite/images/banner_hu7f57a55cdfb114d8457cecffda3e2af4_818337_545x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 575px)" />
           <source
             
-              srcset="/hugosite/images/banner_hu0a5f8563a8e7f50dfbace1ba44f112bf_80952_600x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/hugosite/images/banner_hu7f57a55cdfb114d8457cecffda3e2af4_818337_600x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 767px)" />
           <source
             
-              srcset="/hugosite/images/banner_hu0a5f8563a8e7f50dfbace1ba44f112bf_80952_700x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/hugosite/images/banner_hu7f57a55cdfb114d8457cecffda3e2af4_818337_700x0_resize_q80_h2_lanczos_3.webp"
             
             media="(max-width: 991px)" />
           <source
             
-              srcset="/hugosite/images/banner_hu0a5f8563a8e7f50dfbace1ba44f112bf_80952_800x0_resize_q80_h2_lanczos_3.webp"
+              srcset="/hugosite/images/banner_hu7f57a55cdfb114d8457cecffda3e2af4_818337_800x0_resize_q80_h2_lanczos_3.webp"
              />
           <img
             
               loading="eager" decoding="async"
-              src="/hugosite/images/banner_hu0a5f8563a8e7f50dfbace1ba44f112bf_80952_800x0_resize_lanczos_3.png"
+              src="/hugosite/images/banner_hu7f57a55cdfb114d8457cecffda3e2af4_818337_800x0_resize_lanczos_3.png"
             class=" mx-auto lg:!max-w-[800px] img"
             alt="Banner image"
-            width="1206"
-            height="553" />
+            width="1920"
+            height="810" />
         </picture>
       
       
@@ -2036,6 +2046,47 @@
     
   
   
+  <script>
+    const texts = ["这是一段测试文字.", "Now typing the second sentence.", "Finally, this is the third one."];
+    const typingSpeed = 100;  
+    const deletingSpeed = 50;  
+    const delayBetweenTexts = 1000;  
+    let textIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        const container = document.getElementById('text');
+        const currentText = texts[textIndex];
+
+        if (isDeleting) {
+            container.textContent = currentText.substring(0, charIndex--);
+            if (charIndex < 0) {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % texts.length;
+                setTimeout(type, delayBetweenTexts);
+            } else {
+                setTimeout(type, deletingSpeed);
+            }
+        } else {
+            container.textContent = currentText.substring(0, charIndex++);
+            if (charIndex > currentText.length) {
+                isDeleting = true;
+                setTimeout(type, delayBetweenTexts);
+            } else {
+                setTimeout(type, typingSpeed);
+            }
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", () => {
+        type();
+    });
+</script>
+
+
+
+
 
     </main>
 
