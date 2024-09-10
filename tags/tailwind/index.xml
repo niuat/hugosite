@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tailwind on Hugoplate</title>
-    <link>https://niuat.github.io/hugosite/tags/tailwind/</link>
+    <link>http://localhost:1313/hugosite/tags/tailwind/</link>
     <description>Recent content in Tailwind on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="https://niuat.github.io/hugosite/tags/tailwind/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/hugosite/tags/tailwind/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用pyinstaller打包为exe可执行程序遇见的一些坑</title>
-      <link>https://niuat.github.io/hugosite/blog/249202/</link>
+      <link>http://localhost:1313/hugosite/blog/249202/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/blog/249202/</guid>
+      <guid>http://localhost:1313/hugosite/blog/249202/</guid>
       <description></description>
     </item>
     <item>
       <title>逆向阿里系 acw_sc__v2 cookie js 加密</title>
-      <link>https://niuat.github.io/hugosite/blog/249201/</link>
+      <link>http://localhost:1313/hugosite/blog/249201/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/blog/249201/</guid>
+      <guid>http://localhost:1313/hugosite/blog/249201/</guid>
       <description></description>
     </item>
   </channel>

@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Hugoplate</title>
-    <link>https://niuat.github.io/hugosite/categories/</link>
+    <link>http://localhost:1313/hugosite/categories/</link>
     <description>Recent content in Categories on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="https://niuat.github.io/hugosite/categories/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/hugosite/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Application</title>
-      <link>https://niuat.github.io/hugosite/categories/application/</link>
+      <link>http://localhost:1313/hugosite/categories/application/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/categories/application/</guid>
+      <guid>http://localhost:1313/hugosite/categories/application/</guid>
       <description></description>
     </item>
     <item>
       <title>Data</title>
-      <link>https://niuat.github.io/hugosite/categories/data/</link>
+      <link>http://localhost:1313/hugosite/categories/data/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/categories/data/</guid>
+      <guid>http://localhost:1313/hugosite/categories/data/</guid>
       <description></description>
     </item>
   </channel>

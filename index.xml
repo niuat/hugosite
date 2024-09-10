@@ -2,45 +2,45 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Hugoplate</title>
-    <link>https://niuat.github.io/hugosite/</link>
+    <link>http://localhost:1313/hugosite/</link>
     <description>Recent content on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
     <lastBuildDate>Mon, 04 Apr 2022 05:00:00 +0000</lastBuildDate>
-    <atom:link href="https://niuat.github.io/hugosite/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/hugosite/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>使用pyinstaller打包为exe可执行程序遇见的一些坑</title>
-      <link>https://niuat.github.io/hugosite/blog/249202/</link>
+      <link>http://localhost:1313/hugosite/blog/249202/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/blog/249202/</guid>
+      <guid>http://localhost:1313/hugosite/blog/249202/</guid>
       <description></description>
     </item>
     <item>
       <title>逆向阿里系 acw_sc__v2 cookie js 加密</title>
-      <link>https://niuat.github.io/hugosite/blog/249201/</link>
+      <link>http://localhost:1313/hugosite/blog/249201/</link>
       <pubDate>Mon, 04 Apr 2022 05:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/blog/249201/</guid>
+      <guid>http://localhost:1313/hugosite/blog/249201/</guid>
       <description></description>
     </item>
     <item>
       <title>Elements</title>
-      <link>https://niuat.github.io/hugosite/elements/</link>
+      <link>http://localhost:1313/hugosite/elements/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/elements/</guid>
+      <guid>http://localhost:1313/hugosite/elements/</guid>
       <description>Table of Contents Heading 2 Heading 3 Heading 4 Heading 5 Emphasis Button Link Paragraph Ordered List Unordered List Notice Tab Accordions Code and Syntax Highlighting Blockquote Tables Image Gallery Slider Youtube video Custom video Here is an example of headings.</description>
     </item>
     <item>
       <title>John Doe</title>
-      <link>https://niuat.github.io/hugosite/authors/john-doe/</link>
+      <link>http://localhost:1313/hugosite/authors/john-doe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/authors/john-doe/</guid>
+      <guid>http://localhost:1313/hugosite/authors/john-doe/</guid>
       <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     <item>
       <title>Privacy</title>
-      <link>https://niuat.github.io/hugosite/privacy-policy/</link>
+      <link>http://localhost:1313/hugosite/privacy-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/privacy-policy/</guid>
+      <guid>http://localhost:1313/hugosite/privacy-policy/</guid>
       <description>Responsibility of Contributors Lorem ipsum dolor sit amet, consectetur adipiscing elit.</description>
     </item>
     <item>
@@ -52,9 +52,9 @@
     </item>
     <item>
       <title>Sam Wilson</title>
-      <link>https://niuat.github.io/hugosite/authors/sam-wilson/</link>
+      <link>http://localhost:1313/hugosite/authors/sam-wilson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/authors/sam-wilson/</guid>
+      <guid>http://localhost:1313/hugosite/authors/sam-wilson/</guid>
       <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     <item>
@@ -66,9 +66,9 @@
     </item>
     <item>
       <title>William Jacob</title>
-      <link>https://niuat.github.io/hugosite/authors/william-jacob/</link>
+      <link>http://localhost:1313/hugosite/authors/william-jacob/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>https://niuat.github.io/hugosite/authors/william-jacob/</guid>
+      <guid>http://localhost:1313/hugosite/authors/william-jacob/</guid>
       <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
   </channel>

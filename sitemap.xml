@@ -2,54 +2,54 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://niuat.github.io/hugosite/</loc>
+    <loc>http://localhost:1313/hugosite/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/categories/application/</loc>
+    <loc>http://localhost:1313/hugosite/categories/application/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/blog/</loc>
+    <loc>http://localhost:1313/hugosite/blog/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/categories/</loc>
+    <loc>http://localhost:1313/hugosite/categories/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/categories/data/</loc>
+    <loc>http://localhost:1313/hugosite/categories/data/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/tags/nextjs/</loc>
+    <loc>http://localhost:1313/hugosite/tags/nextjs/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/tags/</loc>
+    <loc>http://localhost:1313/hugosite/tags/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/tags/tailwind/</loc>
+    <loc>http://localhost:1313/hugosite/tags/tailwind/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/blog/249202/</loc>
+    <loc>http://localhost:1313/hugosite/blog/249202/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/blog/249201/</loc>
+    <loc>http://localhost:1313/hugosite/blog/249201/</loc>
     <lastmod>2022-04-04T05:00:00+00:00</lastmod>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/authors/</loc>
+    <loc>http://localhost:1313/hugosite/authors/</loc>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/contact/</loc>
+    <loc>http://localhost:1313/hugosite/contact/</loc>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/elements/</loc>
+    <loc>http://localhost:1313/hugosite/elements/</loc>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/about/</loc>
+    <loc>http://localhost:1313/hugosite/about/</loc>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/authors/john-doe/</loc>
+    <loc>http://localhost:1313/hugosite/authors/john-doe/</loc>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/pages/</loc>
+    <loc>http://localhost:1313/hugosite/pages/</loc>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/privacy-policy/</loc>
+    <loc>http://localhost:1313/hugosite/privacy-policy/</loc>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/authors/sam-wilson/</loc>
+    <loc>http://localhost:1313/hugosite/authors/sam-wilson/</loc>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/sections/</loc>
+    <loc>http://localhost:1313/hugosite/sections/</loc>
   </url><url>
-    <loc>https://niuat.github.io/hugosite/authors/william-jacob/</loc>
+    <loc>http://localhost:1313/hugosite/authors/william-jacob/</loc>
   </url>
 </urlset>
