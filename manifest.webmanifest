@@ -4,7 +4,7 @@
   "lang": "en-us",
   "display": "fullscreen",
   "orientation" : "portrait",
-  "start_url": "http://localhost:1313/hugosite/?utm_source=web_app_manifest",
+  "start_url": "https://niuat.github.io/hugosite/?utm_source=web_app_manifest",
   "background_color": "#fff",
   "theme_color": "#000",
 

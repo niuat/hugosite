@@ -2,30 +2,30 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Authors on Hugoplate</title>
-    <link>http://localhost:1313/hugosite/authors/</link>
+    <link>https://niuat.github.io/hugosite/authors/</link>
     <description>Recent content in Authors on Hugoplate</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="http://localhost:1313/hugosite/authors/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://niuat.github.io/hugosite/authors/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>John Doe</title>
-      <link>http://localhost:1313/hugosite/authors/john-doe/</link>
+      <link>https://niuat.github.io/hugosite/authors/john-doe/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugosite/authors/john-doe/</guid>
+      <guid>https://niuat.github.io/hugosite/authors/john-doe/</guid>
       <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     <item>
       <title>Sam Wilson</title>
-      <link>http://localhost:1313/hugosite/authors/sam-wilson/</link>
+      <link>https://niuat.github.io/hugosite/authors/sam-wilson/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugosite/authors/sam-wilson/</guid>
+      <guid>https://niuat.github.io/hugosite/authors/sam-wilson/</guid>
       <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
     <item>
       <title>William Jacob</title>
-      <link>http://localhost:1313/hugosite/authors/william-jacob/</link>
+      <link>https://niuat.github.io/hugosite/authors/william-jacob/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/hugosite/authors/william-jacob/</guid>
+      <guid>https://niuat.github.io/hugosite/authors/william-jacob/</guid>
       <description>lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</description>
     </item>
   </channel>

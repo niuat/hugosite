@@ -11,6 +11,17 @@
   "tags": "nextjs, tailwind",
   "content":" 将一个处理本地 CSV 表格并生成图表的小程序转为 EXE 可执行程序时，我遇到了一些问题。这个程序使用了 pyecharts 包，但大多数打包程序与该包兼容性较差。由于表格必须本地处理，我需要找到解决方法。\n打包好的 EXE 程序需要处理当前工作目录下的 CSV 文件，但在使用 PyInstaller 打包后，程序解压到临时目录，导致程序找不到 CSV 文件并报错：“No CSV files found in the directory.”\n在遇到 PyInstaller 的问题后，我尝试了 py2exe 和 cx_Freeze，但也出现了类似的问题。因此，我决定回头排查 PyInstaller 的错误。\n第一个坑：打包后的exe占用空间大 打包成一个文件后，空间占用大的原因是直接使用了测试环境进行打包，默认将环境中所有依赖包都打包到 EXE 文件中，导致耗时长且占用空间大。\n解决办法：重新构建虚拟环境，在虚拟环境中添加好依赖后再进行打包。\n第二个坑：找不到依赖包 FileNotFoundError: [Errno 2] No such file or directory: \u0026#39;C:\\\\Users\\\\x\\\\AppData\\\\Local\\\\Temp\\\\_MEI6362\\\\pyecharts\\\\datasets\\\\map_filename.json\u0026#39; 在打包成一个文件后，运行时系统会创建一个临时目录，但在该目录中找不到 pyecharts 包所需的文件，导致报错。\n解决办法：使用 add-data 参数手动将依赖包加入打包文件中：\npyinstaller -F test.py --add-data python安装目录\\Lib\\site-packages\\pyecharts\\render\\templates;pyecharts/render/templates --add-data python安装目录\\Lib\\site-packages\\pyecharts\\datasets;pyecharts/datasets 第三个坑：运行时无法调用同目录下的csv文件 运行时，程序的实际工作目录并不是当前 EXE 文件所在的目录，而是临时生成的文件夹。\n为了解决这个问题，我在程序中添加了一些步骤来确认当前的工作目录：\ncurrent_dir = os.path.dirname(os.path.abspath(__file__)) print(f\u0026#34;Script directory: {current_dir}\u0026#34;) 发现输出的是一个TEMP文件夹，添加步骤设置工作目录后，正常运行。\nif getattr(sys, \u0026#39;frozen\u0026#39;, False): # 如果是打包后的可执行文件 current_dir = sys._MEIPASS else: # 如果是正常的脚本 current_dir = os.path.dirname(os.path.abspath(__file__)) print(f\u0026#34;Current directory: {current_dir}\u0026#34;) # 设置工作目录为当前目录 os.chdir(current_dir) "},{
   "section": "Blog",
+  "slug": "/hugosite/blog/249011/",
+  "title": "记录一次样式混淆 CSS 加密案例",
+  "description": "this is meta description",
+  "date": "April 4, 2022",
+  "image": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \u003cimg\n    loading=\"\"\n    decoding=\"async\"\n    src=\"https://s2.loli.net/2024/09/11/fUkb7Kj3osQXdwc.png\"\n    alt=\"\"\n    class=\" img\"\n    height=\"\"\n    width=\"420\" /\u003e\n",
+  "imageSM": "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n  \u003cimg\n    loading=\"\"\n    decoding=\"async\"\n    src=\"https://s2.loli.net/2024/09/11/fUkb7Kj3osQXdwc.png\"\n    alt=\"\"\n    class=\" img\"\n    height=\"100\"\n    width=\"100\" /\u003e\n",
+  "searchKeyword": "",
+  "categories": "Application, Data",
+  "tags": "nextjs, tailwind",
+  "content":" 猿人学web任务4：采集带有css加密的数据\n观察需要采集的数据 观察网页源码也能明显看出，每个数字由图片排列组合生成。\n测试发现不携带Cookie发送请求，返回的数据一致。没有通过Cookie加密。\n返回数据包中的\u0026rsquo;info\u0026rsquo; 是我们需要的数据，但是和网站文件数据有出入，可能经过解密后显示的。参数 key 和 value 高度可疑。\n经观察发现：\n所有的数字都是通过相同的10张数字图片组成的。后续数据可以直接识别地址推导出对应的数字\n数字的顺序通过css左右偏移来控制的，每个字符11.5的偏移量。例如第一个数据左边距0，那么就是在第一个位置。第二个数据左边距0，那么它就是在第二个位置。第三个数据左边距11.5px，那么它向右移一位，是第四个位置。第四个数据左边距 -11.5px ，那么它左移一位，为第三个位置。\n存在display:none的样式的数据不会显示在数据中，为干扰项。\n寻找加密入口 点击下一页是通过ajax加载的，在发出请求的位置打断点 一步步调试找到疑似加密函数的位置：\ndata 是请求返回的信息，根据代码可以看出加密逻辑:\n将info信息取出，加入到class name = number的数据中\nj_key 通过字符串处理以及某种加密函数得到。使用上面生成的选择器j_key找到对应的元素，并将它们的display属性设置为none，也就是隐藏这些元素。\n找到所有类名为img_number的元素，移除它们所有的类，然后重新添加img_number类。\n经过对比发现,返回数据的图片地址和传入html中的图片地址一致，图片地址并没有经过加密，加密的数据只有 j_key用于判断是否display\nJ_key 参数解密 在网站源文件可以搜索到hex_md5、bota等加密函数，把data数据传入后将整个函数取出测试：\nroot@DESKTOP-QKJKBB5:/home/zohar/work/crawer/No.4# nodejs test2.js .a0ad46ee666796be0fecdd5083374549 对比返回的数据中的info信息，可以找到大量class携带a0ad46ee666796be0fecdd5083374549的数据。由上面的加密逻辑可以知道，携带这个类的最后css样式会变为display: none\n编写采集程序 "},{
+  "section": "Blog",
   "slug": "/hugosite/blog/249201/",
   "title": "逆向阿里系 acw_sc__v2 cookie js 加密",
   "description": "this is meta description",
